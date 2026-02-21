@@ -1,0 +1,8 @@
+{
+  "name": "Punjab AI Creator Hub",
+  "description": "An AI-powered platform for Punjab creators to generate viral reels, analyze images, and get local expert advice.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
