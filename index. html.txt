@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[YOUR NAME] | Personal Brand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #050505;
+            --text: #ffffff;
+            --accent: #3b82f6; /* Electric Blue */
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        * { margin: 0; padding: 0; box-box-sizing: border-box; }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Background Glow Animation */
+        .glow {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at 50% 50%, #1e1e1e 0%, #050505 100%);
+            z-index: -1;
+        }
+
+        .blob {
+            position: absolute;
+            width: 500px; height: 500px;
+            background: var(--accent);
+            filter: blur(150px);
+            opacity: 0.15;
+            border-radius: 50%;
+            animation: move 20s infinite alternate;
+        }
+
+        @keyframes move {
+            from { transform: translate(-10%, -10%); }
+            to { transform: translate(20%, 20%); }
+        }
+
+        /* Hero Section */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 10vw, 8rem);
+            line-height: 0.9;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+        }
+
+        .identity {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: var(--accent);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .tagline {
+            max-width: 600px;
+            font-size: 1.1rem;
+            opacity: 0.7;
+            margin-bottom: 30px;
+        }
+
+        /* Affiliate/CTA Buttons */
+        .cta-group {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+        }
+
+        .btn-primary:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(59, 130, 246, 0.5); }
+
+        .btn-secondary {
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white;
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover { background: white; color: black; }
+
+        /* Content Sections */
+        section {
+            padding: 100px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .glass-card {
+            background: var(--glass);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            margin-top: 50px;
+        }
+
+        h2 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 20px; }
+
+        footer {
+            padding: 50px;
+            text-align: center;
+            opacity: 0.5;
+            font-size: 0.8rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="glow"></div>
+    <div class="blob"></div>
+
+    <header>
+        <p class="identity">FOUNDER & CREATOR</p>
+        <h1>[YOUR NAME]</h1>
+        <p class="tagline">मैं आपके विचारों को हकीकत में बदलता हूँ। नीचे दिए गए लिंक्स से मेरे टॉप रेकमेंडेड टूल्स और सर्विसेज देखें।</p>
+        
+        <div class="cta-group">
+            <a href="#work" class="btn btn-primary">मेरे साथ जुड़ें</a>
+            <a href="https://your-affiliate-link.com" class="btn btn-secondary">बेस्ट टूल्स (Affiliate)</a>
+        </div>
+    </header>
+
+    <section id="work">
+        <h2>मैं क्या करता हूँ</h2>
+        <div class="glass-card">
+            <h3>डिजिटल पहचान बनाना</h3>
+            <p>आज के दौर में आपकी ऑनलाइन पहचान ही आपकी असली ताकत है। मैं उसे बनाने में आपकी मदद करता हूँ।</p>
+            <br>
+            <p><strong>Note:</strong> यह पेज मोबाइल पर भी उतना ही शानदार दिखेगा।</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 [YOUR NAME]. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
